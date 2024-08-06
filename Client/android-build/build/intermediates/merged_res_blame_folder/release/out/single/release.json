@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-ldpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-ldpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-xxhdpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/xml_qtprovider_paths.xml.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/xml/qtprovider_paths.xml"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-xhdpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-xhdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-mdpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-hdpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "org.qtproject.tcpClient-merged_res-9:/drawable-xxxhdpi_icon.png.flat",
+        "source": "org.qtproject.tcpClient-android-build-10:/drawable-xxxhdpi/icon.png"
+    }
+]

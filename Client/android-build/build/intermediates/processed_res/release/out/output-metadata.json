@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "org.qtproject.tcpClient",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 12,
+      "versionName": "Snow Сone",
+      "outputFile": "resources-release.ap_"
+    }
+  ],
+  "elementType": "File"
+}

@@ -1,0 +1,12 @@
+org.qtproject.tcpClient-java-0 C:\Qt\6.6.1\android_armv7\src\android\java\res
+org.qtproject.tcpClient-lifecycle-runtime-2.3.1-1 C:\Users\tihon\.gradle\caches\transforms-3\3041f062ae0668b5512922884dfdcb95\transformed\lifecycle-runtime-2.3.1\res
+org.qtproject.tcpClient-annotation-experimental-1.3.0-2 C:\Users\tihon\.gradle\caches\transforms-3\3ea98a6e1db53160b5740f47211ec65c\transformed\annotation-experimental-1.3.0\res
+org.qtproject.tcpClient-core-1.10.1-3 C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\res
+org.qtproject.tcpClient-pngs-4 C:\codes\projects\TCP_IP\Client\android-build\build\generated\res\pngs\release
+org.qtproject.tcpClient-resValues-5 C:\codes\projects\TCP_IP\Client\android-build\build\generated\res\resValues\release
+org.qtproject.tcpClient-rs-6 C:\codes\projects\TCP_IP\Client\android-build\build\generated\res\rs\release
+org.qtproject.tcpClient-mergeReleaseResources-7 C:\codes\projects\TCP_IP\Client\android-build\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+org.qtproject.tcpClient-mergeReleaseResources-8 C:\codes\projects\TCP_IP\Client\android-build\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+org.qtproject.tcpClient-merged_res-9 C:\codes\projects\TCP_IP\Client\android-build\build\intermediates\merged_res\release
+org.qtproject.tcpClient-android-build-10 C:\codes\projects\TCP_IP\Client\android-build\res
+org.qtproject.tcpClient-release-11 C:\codes\projects\TCP_IP\Client\android-build\src\release\res

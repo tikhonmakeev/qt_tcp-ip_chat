@@ -1,0 +1,127 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.qtproject.tcpClient"
+4    android:installLocation="auto"
+5    android:versionCode="12"
+6    android:versionName="Snow Сone" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="23"
+9-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:3:5-67
+12-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:4:5-81
+13-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:4:22-78
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:5:5-79
+14-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:5:22-76
+15
+16    <supports-screens
+16-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:7:5-135
+17        android:anyDensity="true"
+17-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:7:23-48
+18        android:largeScreens="true"
+18-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:7:49-76
+19        android:normalScreens="true"
+19-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:7:77-105
+20        android:smallScreens="true" />
+20-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:7:106-133
+21
+22    <permission
+22-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+23        android:name="org.qtproject.tcpClient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="org.qtproject.tcpClient.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:5-22:19
+29        android:name="org.qtproject.qt.android.bindings.QtApplication"
+29-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:18-80
+30        android:allowBackup="true"
+30-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:190-216
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.10.1] C:\Users\tihon\.gradle\caches\transforms-3\4be2570fd98c550226d6d381b2ee3a14\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+32        android:fullBackupOnly="false"
+32-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:217-247
+33        android:hardwareAccelerated="true"
+33-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:81-115
+34        android:icon="@drawable/icon"
+34-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:248-277
+35        android:label="Andoid Client"
+35-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:116-145
+36        android:requestLegacyExternalStorage="true" >
+36-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:8:146-189
+37        <activity
+37-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:9-17:20
+38            android:name="org.qtproject.tcpClient.NotificationClient"
+38-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:19-76
+39            android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation|mcc|mnc|density"
+39-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:77-246
+40            android:exported="true"
+40-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:346-369
+41            android:label="Medved Chat"
+41-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:247-274
+42            android:launchMode="singleTop"
+42-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:275-305
+43            android:screenOrientation="unspecified" >
+43-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:9:306-345
+44            <intent-filter>
+44-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:10:13-13:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:11:17-68
+45-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:11:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:12:17-76
+47-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:12:27-74
+48            </intent-filter>
+49
+50            <meta-data
+50-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:14:13-84
+51                android:name="android.app.lib_name"
+51-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:14:24-59
+52                android:value="Client" />
+52-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:14:60-82
+53            <meta-data
+53-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:15:13-79
+54                android:name="android.app.arguments"
+54-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:15:24-60
+55                android:value="" />
+55-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:15:61-77
+56            <meta-data
+56-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:16:13-98
+57                android:name="android.app.extract_android_style"
+57-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:16:24-72
+58                android:value="minimal" />
+58-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:16:73-96
+59        </activity>
+60
+61        <provider
+62            android:name="androidx.core.content.FileProvider"
+62-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:19:19-68
+63            android:authorities="org.qtproject.tcpClient.qtprovider"
+63-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:19:69-118
+64            android:exported="false"
+64-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:19:119-143
+65            android:grantUriPermissions="true" >
+65-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:19:144-178
+66            <meta-data
+66-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:20:13-117
+67                android:name="android.support.FILE_PROVIDER_PATHS"
+67-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:20:24-74
+68                android:resource="@xml/qtprovider_paths" />
+68-->C:\codes\projects\TCP_IP\Client\android-build\AndroidManifest.xml:20:75-115
+69        </provider>
+70    </application>
+71
+72</manifest>
