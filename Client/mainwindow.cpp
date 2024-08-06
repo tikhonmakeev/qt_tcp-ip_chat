@@ -3,16 +3,68 @@
 #include "notificationclient.h"
 #include <QHostAddress>
 #include <QNetworkInterface>
+#include <QStyleFactory>
 #include <QKeyEvent>
 #include <QThread>
 #include <QTime>
 #include <vector>
 #include <fstream>
+
+void MainWindow::setDarkPalette(){
+    // Создаём палитру для тёмной темы оформления
+    QPalette darkPalette;
+
+    // Настраиваем палитру для цветовых ролей элементов интерфейса
+    darkPalette.setColor(QPalette::Window, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::WindowText, Qt::white);
+    darkPalette.setColor(QPalette::Base, QColor(25, 25, 25));
+    darkPalette.setColor(QPalette::AlternateBase, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::ToolTipBase, Qt::white);
+    darkPalette.setColor(QPalette::ToolTipText, Qt::white);
+    darkPalette.setColor(QPalette::Text, Qt::white);
+    darkPalette.setColor(QPalette::PlaceholderText, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::Button, QColor(53, 53, 53));
+    darkPalette.setColor(QPalette::ButtonText, Qt::white);
+    darkPalette.setColor(QPalette::BrightText, Qt::red);
+    darkPalette.setColor(QPalette::Link, QColor(42, 130, 218));
+    darkPalette.setColor(QPalette::Highlight, QColor(42, 130, 218));
+    darkPalette.setColor(QPalette::HighlightedText, Qt::black);
+
+
+    qApp->setPalette(darkPalette);
+}
+
+
+void MainWindow::setLitePalette(){
+    QPalette litePalette;
+
+    // Настраиваем палитру для цветовых ролей элементов интерфейса
+    litePalette.setColor(QPalette::Window, QColor(245, 245, 245));
+    litePalette.setColor(QPalette::WindowText, Qt::black);
+    litePalette.setColor(QPalette::Base, Qt::white);
+    litePalette.setColor(QPalette::AlternateBase, Qt::white);
+    litePalette.setColor(QPalette::ToolTipBase, Qt::black);
+    litePalette.setColor(QPalette::ToolTipText, Qt::black);
+    litePalette.setColor(QPalette::Text, Qt::black);
+    litePalette.setColor(QPalette::Button, QColor(230, 230, 230));
+    litePalette.setColor(QPalette::ButtonText, Qt::black);
+    litePalette.setColor(QPalette::BrightText, Qt::red);
+    litePalette.setColor(QPalette::Link, Qt::white);
+    litePalette.setColor(QPalette::Highlight, Qt::white);
+    litePalette.setColor(QPalette::HighlightedText, Qt::black);
+
+    qApp->setPalette(litePalette);
+}
+
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    MainWindow::setDarkPalette(); // Устанавливаем темную тему
+
     socket = new QTcpSocket(this);
 
     const QHostAddress &localhost = QHostAddress(QHostAddress::LocalHost);
@@ -229,11 +281,11 @@ void MainWindow::ReadytoRead(){
             ui->otherMsgs->undo(); //не работает
 
 
-            NotificationClient *Notification = new NotificationClient();
-            Notification->setNotification(QString("Hello World!"));
+            // NotificationClient *Notification = new NotificationClient();
+            // Notification->setNotification(QString("Hello World!"));
 
             cursor.insertHtml(string_to_show);
-            // if (not isMyMsg)Notification->setNotification(sender_nick + ":\t" + sended_msg);
+            if (not isMyMsg)Notification->setNotification(sender_nick + ":\t" + sended_msg);
             //Уведомление, если отправитель не сам юзер
 
 
