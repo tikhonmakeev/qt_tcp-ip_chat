@@ -33,6 +33,8 @@ private slots:
     void on_userMsg_editingFinished();
 
 private:
+    void setDarkPalette();
+    void setLitePalette();
     QTcpSocket *socket;
     QByteArray Data;
     Ui::MainWindow *ui;

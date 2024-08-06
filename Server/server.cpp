@@ -100,7 +100,7 @@ void server::readytoread(){
                     qDebug()<< "{" << it->first << ", " << it->second << "}";
                 }
             }
-            else if (whatIP_reserved_nicname(nicknames, possiblenickname, socket) == ip){
+            else if (whatIP_reserved_nicname(nicknames, possiblenickname) == ip){
                 qDebug()<<"Succesfull returning of nickname: " + possiblenickname + " to user with ip " + ip;
                 SendClient("\vReturn nickname " + possiblenickname + " with IP: " + ip + " " + ListToString(nicknames));
             }
